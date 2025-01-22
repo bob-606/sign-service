@@ -10,7 +10,7 @@ A WEB3 service to upload, sign, and store document hashes on Gnosis Chain.
 ## Installation
 ```bash
 # Clone the repository
-git clone https://01.kood.tech/git/jlim/sign-service/
+git clone https://github.com/bob-606/sign-service
 cd sign-service
 
 # Install dependencies
