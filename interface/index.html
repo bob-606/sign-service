@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Signing Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section id="intro">
+            <h2>[Introduction]</h2>
+            <p>This is a signing service for Gnosis Chain</p>
+        </section>
+
+        <section id="connection">
+            <h2>[Upload and Connection]</h2>
+            <button id="connectWallet">connect wallet</button>
+            <div class="upload-section">
+                <span id="currentDocument">No document selected</span>
+                <input type="file" id="fileInput" style="display: none">
+                <button id="uploadButton">upload document</button>
+            </div>
+        </section>
+
+        <section id="actions">
+            <h2>[Actions]</h2>
+            <div class="buttons">
+                <button id="signButton">sign</button>
+                <button id="publishButton">publish</button>
+                <button id="verifyButton">verify</button>
+            </div>
+            <div class="results">
+                <div id="signatureResult">Signature: </div>
+                <div id="confirmationResult">Confirmation: </div>
+                <div id="verifyResult">Result: </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js"></script>
+    <script src="js/blockchain.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
